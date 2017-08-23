@@ -1,0 +1,10 @@
+<h1 class="common-header">All Pizzas Go Here</h1>
+<section class="greenbox round-border">
+
+<% for pizza in @pizza do %>
+  <p>Name: <%= pizza.pretty_name() %></p>
+  <p>Order: <%= pizza.quantity %> x <%= pizza.topping %> </p>
+  <p><a href="/pizzas/<%= pizza.id %>">Order details</a></p>
+  <hr>
+<% end %>
+</section>

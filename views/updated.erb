@@ -1,0 +1,15 @@
+<h1 class="common-header">Your order has been updated</h1>
+
+<h2>Your Order</h2>
+<p>First name: <%= @pizza.first_name %></p>
+<p>Last name: <%= @pizza.last_name %></p>
+<p>Topping: <%= @pizza.topping %></p>
+<p>Quantity: <%= @pizza.quantity %></p>
+
+<form action="/pizzas/<%= @pizza.id %>/deleted" method="post">
+<input type="submit" value="Delete this order">
+</form>
+<br>
+<form action="/pizzas/<%= @pizza.id %>/edit" method="post">
+<input type="submit" value="Update this order">
+</form>

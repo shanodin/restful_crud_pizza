@@ -1,0 +1,21 @@
+<h1 class="common-header">Your Order</h1>
+<section class="greenbox round-border">
+
+
+<p>First name: <%= @pizza.first_name %></p>
+<p>Last name: <%= @pizza.last_name %></p>
+<p>Topping: <%= @pizza.topping %></p>
+<p>Quantity: <%= @pizza.quantity %></p>
+
+</section>
+<section class="buttonbox">
+
+<form action="/pizzas/<%= @pizza.id %>/deleted" method="post">
+<input type="submit" value="Delete this order">
+</form>
+<br>
+<form action="/pizzas/<%= @pizza.id %>/edit" method="post">
+<input type="submit" value="Update this order">
+</form>
+
+</section>

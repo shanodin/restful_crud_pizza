@@ -1,0 +1,63 @@
+nav{
+  display: block;
+  background-color: ForestGreen;
+  width: 880px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: right;
+}
+nav ul {
+  list-style-type: none;
+  padding-right: 10px;
+}
+nav ul li {
+  display: inline;
+  padding-right: 10px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.common-header {
+  color: green;
+  text-align: center;
+}
+
+.greenbox  {
+  background-color: #05AB61;
+  color: #fff;
+  width: 430px;
+  padding: 25px 10px 10px 10px;
+  margin-left: 33%;
+  margin-right: 50%;
+  margin-top: 20px;
+}
+.round-border {
+  border-radius: 10px;
+}
+.buttonbox{
+  width: 430px;
+  margin-left: 33%;
+  margin-right: 50%;
+}
+
+input{
+  background-color: lightgreen;
+}
+
+input:focus{
+  background-color: wheat;
+}
+input[type=submit]{
+  background-color: green;
+}
+
+input[type=submit]:hover{
+  background-color: wheat;
+}
